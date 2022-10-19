@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
+#app {
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+/* *:focus {
+  outline: none;
+} */
+#logo {
+  width: 50px;
+}
+body {
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 1.5;
+  /*
+  font-size: 22px;
+  font-family: 'Patrick Hand', cursive;
+  */
+}
+
+input,
+button,
+textarea {
+  font-size: unset;
+  font-family: unset;
+  border-radius: 5px;
+
+  margin: 10px 10px 0px 0px;
+}
+input,
+textarea {
+  padding: 10px 10px;
+  background-color: white;
+  border: 3px darkslategray solid;
+  resize: none;
+  width: 100%;
+}
+
+button {
+  padding: 15px;
+  border: unset;
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(104, 139, 255);
+}
+
+/* SIGN IN & SIGN UP SCREEN */
+.signing {
+  max-width: 800px;
+  border: solid 3px black;
+  margin: auto;
+  padding: 15px;
+}
+
+.signing_bg {
+  background-image: url("https://images.squarespace-cdn.com/content/v1/57a958a4f7e0abfd89d44efb/1478322980465-7EFVUMWI7LCL98OY9E15/image-asset.jpeg?format=500w");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px);
+  height: 50vh;
+}
+
+/* TASK ITEMS */
+.taskItem {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /*height: max-content;*/
+
+  border-bottom-right-radius: 15px;
+  margin: 15px 0;
+  padding: 10px 0 10px 50px;
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.375),
+    inset 0px 40px 15px 0px rgba(255, 255, 255, 0.362);
+}
+ol {
+  padding: unset;
+}
+
+.green_btn {
+  background-color: rgb(0, 118, 0);
+  color: white;
+}
+
+.red_btn {
+  background-color: red;
+  color: white;
+}
+#flex_papa {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+#flex_mainSection {
+  overflow: auto;
+  flex-grow: 1;
+}
+
+#flexbox {
+  display: flex;
+  height: 100%;
+}
+.flexbox_element {
+  flex: 33.33%;
+
+  overflow: auto;
+}
+.userIcon {
+  width: 50px;
+}
+
+@media (max-width: 824px) {
+  #flexbox {
+    flex-wrap: wrap;
+  }
+  .flexbox_element {
+    flex: 100%;
+  }
+  .signing {
+    border: none;
+  }
+}
